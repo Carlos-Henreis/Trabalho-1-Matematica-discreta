@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   big_num.h
  * Author: carlos
  *
@@ -6,15 +6,16 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-#define	MAXDIGITS	32000		/* maximum length bignum */ 
+#define	MAXDIGITS	32000		/* maximum length bignum */
 
 #define PLUS		1		/* positive sign bit */
 #define MINUS		-1		/* negative sign bit */
 
 typedef struct {
         char digits[MAXDIGITS];         /* represent the number */
-	int signbit;			/* 1 if positive, -1 if negative */ 
+	int signbit;			/* 1 if positive, -1 if negative */
         int lastdigit;			/* index of high-order digit */
 } bignum;
 
@@ -46,4 +47,3 @@ void divide_bignum(bignum *a, bignum *b, bignum *c);
 void fatorial_bignum(int num, bignum *fat);
 
 #endif	/* BIG_NUM_H */
-

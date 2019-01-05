@@ -1,5 +1,6 @@
 #include "big_num.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 void print_bignum(bignum *n) {
 	int i;
